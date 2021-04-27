@@ -119,7 +119,7 @@ public class AvatarAdminResource extends AbstractAvatarResource {
     }
 
     protected AdminAuth authenticateRealmAdminRequest() {
-        String tokenString = authManager.extractAuthorizationHeaderToken(httpHeaders);
+        String tokenString = AppAuthManager.extractAuthorizationHeaderToken(httpHeaders);
         MultivaluedMap<String, String> queryParameters = session.getContext().getUri().getQueryParameters();
         if (tokenString == null && queryParameters.containsKey("access_token")) {
             tokenString = queryParameters.getFirst("access_token");

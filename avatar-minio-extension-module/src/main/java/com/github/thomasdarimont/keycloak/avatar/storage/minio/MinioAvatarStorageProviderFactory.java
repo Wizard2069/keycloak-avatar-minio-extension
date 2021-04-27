@@ -11,9 +11,9 @@ import org.keycloak.models.KeycloakSessionFactory;
 public class MinioAvatarStorageProviderFactory implements AvatarStorageProviderFactory {
 
     //TODO remove default settings
-    private static final String DEFAULT_SERVER_URL = "http://172.17.0.2:9000";
-    private static final String DEFAULT_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
-    private static final String DEFAULT_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
+    private static final String DEFAULT_SERVER_URL = "http://127.0.0.1:9100";
+    private static final String DEFAULT_ACCESS_KEY = "minioadmin";
+    private static final String DEFAULT_SECRET_KEY = "minioadmin";
 
     private MinioConfig minioConfig;
 
